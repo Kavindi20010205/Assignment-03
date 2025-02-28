@@ -1,0 +1,17 @@
+
+section{
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+}
+#navBar{
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+#homeSide {
+    width: 15vw;
+    height: 100vh;
+    position: absolute;
+    background-color: darkblue;
+}
