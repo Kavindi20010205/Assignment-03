@@ -26,22 +26,34 @@ body>div>div:first-child{
     left: 0;
 }
 
-body>div:first-child>div{
+body>div>div:nth-child(2){
+    font-size: 100px;
+    width: fit-content ;
+    height: fit-content;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+body>div:first-child>div:first-child{
     color: white;
     background: red;
 }
 
-body>div:nth-child(2)>div{
+body>div:nth-child(2)>div:first-child{
     color: white;
     background: darkblue;
 }
 
-body>div:nth-child(3)>div{
+body>div:nth-child(3)>div:first-child{
     color: white;
     background: black;
 }
 
-body>div:nth-child(4)>div{
+body>div:nth-child(4)>div:first-child{
     color: white;
     background: darkred;
 }

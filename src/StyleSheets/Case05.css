@@ -7,7 +7,7 @@ section{
 
 }
 section>div{
-  border: 1px solid black;
+  border: 1px solid black ;
 }
 body>section>div:first-child{
     background-color: red;
