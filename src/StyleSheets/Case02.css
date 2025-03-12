@@ -1,18 +1,101 @@
-
-#home{
+body>header{
+    height: 10vh;
+    /*background-color: yellow;*/
+    position: sticky;
+}
+#logo{
+    height: 60px;
+    top: 0;
+    bottom: 0;
+    left: 0;
     position: absolute;
+    margin: 2px;
+}
+#headerRight{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#headerRight h4{
+    display: inline-block;
+    margin-right: 20px;
+}
+.text{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+}
+#footer{
+    height: 5vh;
+    background-color: grey;
+    position: relative;
+    text-align: center;
+}
+#footerText{
+    position: absolute;
+    width: fit-content;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+    color: white;
+}
+#window{
+    position: relative;
+}
+#window>div{
+    position: relative;
     top: 0;
 }
-#navBar{
-
+#window>div:first-child{
+    background-color: darkblue;
+    position: relative;
+    width: 200px;
+    height: 180vh;
+    padding: 10px;
+    color: white;
 }
-#rightSide h3 {
-    display: inline-block;
-    margin-right: 20px; /* Optional: Adds space between the items */
+#window>div:first-child>div{
+    width: fit-content;
+    margin: 10px 10px 20px 20px;
 }
-/*#homeSide {*/
-/*    width: 15vw;*/
-/*    height: 100vh;*/
-/*    position: relative;*/
-/*    background-color: darkblue;*/
-/*}*/
+#window>div:nth-child(2){
+    height: fit-content;
+    /*background-color: green;*/
+    position: absolute;
+    left: 16vw;
+    top: 0;
+    right: 0;
+}
+#videoSet{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    top: 5px;
+    left: 0;
+    right: 0;
+}
+.video{
+    height: 275px;
+    width: fit-content;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.para{
+    position: relative;
+    padding: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: small;
+    margin: 0;
+}
