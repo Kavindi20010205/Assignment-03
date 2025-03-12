@@ -33,13 +33,13 @@ body>div:first-child>div:nth-child(2){
     border-color: red;
     height: 270px;
 }
-body>div:nth-child(2)>div{
+body>div:first-child>div:nth-child(3){
     background-color: purple;
 }
-body>div:nth-child(3)>div{
+body>div:nth-child(2)>div{
     background-color: cadetblue;
 }
-body>div:nth-child(4)>div{
+body>div:nth-child(3)>div{
     background-color: coral;
 }
 .text{
