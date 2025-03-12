@@ -1,85 +1,60 @@
-body{
-    width: 100vw;
+body>div{
     height: 100vh;
-    margin: 0;
+    position: relative;
 }
-body>section>div{
-    width: 300px;
+.inside{
+    height: 270px;
     aspect-ratio: 1/1;
-    background-color: coral;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.fixedCircle{
+    border-width: 15px;
+    border-style: solid;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
     border-radius: 100%;
-}
-.centre{
     position: fixed;
+    aspect-ratio: 1/1;
 }
-#1st{
-    width: 300px;
-    background-color: grey;
+body>div:first-child>div:first-child{
+    border-color: grey;
+    height: 300px;
 }
-#2nd{
-    width: 250px;
-    background-color: red;
+body>div:first-child>div:nth-child(2){
+    border-color: red;
+    height: 270px;
 }
-
-/*body>div{*/
-/*    aspect-ratio: 1/1;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*    border-radius:100%;*/
-/*    position: absolute;*/
-/*}*/
-/*body>.centre{*/
-/*    position: fixed;*/
-/*}*/
-/*body>.moving{*/
-/*    position: sticky;*/
-/*    width: 260px;*/
-/*}*/
-/*body>div:nth-child(1){*/
-/*    width: 300px;*/
-/*    background-color: grey;*/
-/*}*/
-/*body>div:nth-child(2){*/
-/*    width: 280px;*/
-/*    background-color: red;*/
-/*}*/
-/*body>div:nth-child(3){*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*    background-color: purple;*/
-/*}*/
-/*body>div:nth-child(4){*/
-/*    background-color: deepskyblue;*/
-/*}*/
-/*body>div:nth-child(5){*/
-/*    background-color: coral;*/
-/*}*/
-
-/*body>div>.text{*/
-/*    font-family: "Noto Sans KR", sans-serif;*/
-/*    font-optical-sizing: auto;*/
-/*    font-style: normal;*/
-/*    text-align: center;*/
-/*    color: white;*/
-/*    font-size: 30px;*/
-/*    height:fit-content ;*/
-/*    width: fit-content;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*}*/
+body>div:nth-child(2)>div{
+    background-color: purple;
+}
+body>div:nth-child(3)>div{
+    background-color: cadetblue;
+}
+body>div:nth-child(4)>div{
+    background-color: coral;
+}
+.text{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height:fit-content ;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
