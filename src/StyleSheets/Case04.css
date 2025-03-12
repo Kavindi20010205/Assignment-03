@@ -1,59 +1,65 @@
 body>div{
-    width: 100vw;
-    aspect-ratio: 1/1;
+    height: 100vh;
+    position: relative;
 }
-body>div:first-child{
-    background: white;
-}
-
-body>div:nth-child(2){
-    background: blue;
-}
-
-body>div:nth-child(3){
-    background: rosybrown;
-}
-
-body>div:nth-child(4){
-    background: red;
-}
-
 body>div>div:first-child{
-    width: 100vw ;
-    height: 5vh;
+    height: 50px;
     position: sticky;
     top: 0;
     left: 0;
-}
-
-body>div>div:nth-child(2){
-    font-size: 100px;
-    width: fit-content ;
-    height: fit-content;
-    position: sticky;
-    bottom: 0;
     right: 0;
+    z-index: 1;  /*get top this element always*/
+}
+body>div>div:nth-child(2){
+    position: absolute;
+    height: fit-content;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+body>div:first-child{
+    background-color: white;
+}
+body>div:first-child>div:first-child{
+    background-color: red;
+}
+body>div:nth-child(2){
+    background-color: blue;
+}
+body>div:nth-child(2)>div:first-child{
+    background-color: darkblue;
+}
+body>div:nth-child(3){
+    background-color: darkolivegreen;
+}
+body>div:nth-child(3)>div:first-child{
+    background-color: darkslategrey;
+}
+body>div:nth-child(4){
+    background-color: red;
+}
+body>div:nth-child(4)>div:first-child{
+    background-color: darkred;
+}
+.titleMain{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
     left: 0;
     margin: auto;
 }
-
-body>div:first-child>div:first-child{
-    color: white;
-    background: red;
-}
-
-body>div:nth-child(2)>div:first-child{
-    color: white;
-    background: darkblue;
-}
-
-body>div:nth-child(3)>div:first-child{
-    color: white;
-    background: black;
-}
-
-body>div:nth-child(4)>div:first-child{
-    color: white;
-    background: darkred;
+.centreText{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    position: sticky;
 }
